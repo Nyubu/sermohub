@@ -57,7 +57,17 @@ export const NavBar: React.FC<NavBarProps> = ({}) => {
     }
 
     return (
-        <Flex zIndex={1} position='sticky' top={0} p={4} bg='tan'>
+        <Flex 
+            fontFamily="Poppins" 
+            zIndex={1} 
+            position='sticky' 
+            top={0} p={4} 
+            bgGradient="linear-gradient(
+                to right bottom,
+                rgba(255, 255, 255, 0.9),
+                rgba(255, 255, 255, 0.9)
+            )"
+        >
             <Flex flex={1} m="auto" align="center" maxW={800}>
                 <NextLink href="/">
                     <Link>
